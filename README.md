@@ -1,2 +1,2 @@
 # CS1130
-Repository for AdDU Course Compliances
+Repository for Introduction to Computing Compliances
