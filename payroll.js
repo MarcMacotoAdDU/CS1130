@@ -71,26 +71,19 @@ function deleteEntry() {
   closeModal();
 }
 
-function openClearTableModal() {
-  const clearTableModal = document.getElementById('clearTableModal');
-  clearTableModal.style.display = 'block';
-}
-
-function closeClearTableModal() {
-  const clearTableModal = document.getElementById('clearTableModal');
-  clearTableModal.style.display = 'none';
-}
-
-function clearTableConfirmation() {
-  const modal = document.getElementById('myModal');
-  if (modal.style.display === 'block') {
-    closeModal(); // Close the Delete Entry modal if open
+function clearTable() {
+    const clearTableModal = document.getElementById('clearTableModal');
+    clearTableModal.style.display = 'block';
   }
-  openClearTableModal();
-}
-
-function confirmClearTable() {
-  payrollList = [];
-  displayPayroll();
-  closeClearTableModal();
-}
+  
+  function confirmClearTable() {
+    payrollList = [];
+    displayPayroll();
+    const clearTableModal = document.getElementById('clearTableModal');
+    clearTableModal.style.display = 'none';
+  }
+  
+  function closeClearTableModal() {
+    const clearTableModal = document.getElementById('clearTableModal');
+    clearTableModal.style.display = 'none';
+  }
