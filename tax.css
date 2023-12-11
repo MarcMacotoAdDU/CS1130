@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+  }
+  
+
+  .container {
+    text-align: center;
+  }
+  
+  .table-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tax-table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .tax-table th,
+  .tax-table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tax-table th {
+    background-color: #f2f2f2;
+  }
+
+  .tax-table tr{
+    background-color: #f2f2f2;
+  }
+  
+  .input-box {
+    width: 20%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(241, 241, 241, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-section {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-section label,
+  .input-section input,
+  .input-section button {
+    margin-bottom: 10px;
+  }
+  
+  .input-section button {
+    width: 100%; 
+    padding: 8px 16px;
+    background-color: #10c04a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .input-section button:hover{
+    background-color: #0f860b;
+  }
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/taxbg.png);
+    background-position: center;
+    background-size: cover;
+}
+*{
+    text-decoration: none;
+    color: inherit;
+}
+.side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    font-size: 12px;
+    padding: 0px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pog-pic {
+    width: 30%;
+    margin: 8px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+    
+} 
+
+ul li{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.side-nav .navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+
+}

@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/factorialbg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+}
+  
+.result-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.result-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: #bbbadb;
+}
+  
+.result-box h2 {
+    margin-top: 0;
+}
+
+button{
+    padding: 8px 16px;
+    background-color: #10c04a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f860b;
+}
+
+*{
+    text-decoration: none;
+    color: inherit;
+}
+.side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    font-size: 12px;
+    padding: 0px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pog-pic {
+    width: 30%;
+    margin: 8px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+    
+} 
+
+ul li{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.side-nav .navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+
+}

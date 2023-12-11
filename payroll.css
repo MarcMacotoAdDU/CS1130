@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+  }
+  
+  .input-box,
+  .payroll-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/payrollbg.png);
+    background-position: center;
+    background-size: cover;
+}
+*{
+    text-decoration: none;
+    color: inherit;
+}
+.side-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    font-size: 12px;
+    padding: 0px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pog-pic {
+    width: 30%;
+    margin: 8px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+    
+} 
+
+ul li{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.side-nav .navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+
+}
