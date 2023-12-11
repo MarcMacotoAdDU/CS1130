@@ -47,12 +47,12 @@ function displayPayroll() {
       <td>${employee.grossPay}</td>
       <td>${employee.deductionAmount}</td>
       <td>${employee.netPay}</td>
-      <td><button onclick="openModal(${index})">Delete</button></td>
+      <td><button onclick="openDeleteModal(${index})">Delete</button></td>
     `;
   });
 }
 
-function openModal(index) {
+function openDeleteModal(index) {
   const modal = document.getElementById('myModal');
   modal.style.display = 'block';
   modal.dataset.index = index;
@@ -71,7 +71,26 @@ function deleteEntry() {
   closeModal();
 }
 
-function clearTable() {
+function openClearTableModal() {
+  const clearTableModal = document.getElementById('clearTableModal');
+  clearTableModal.style.display = 'block';
+}
+
+function closeClearTableModal() {
+  const clearTableModal = document.getElementById('clearTableModal');
+  clearTableModal.style.display = 'none';
+}
+
+function clearTableConfirmation() {
+  const modal = document.getElementById('myModal');
+  if (modal.style.display === 'block') {
+    closeModal(); // Close the Delete Entry modal if open
+  }
+  openClearTableModal();
+}
+
+function confirmClearTable() {
   payrollList = [];
   displayPayroll();
+  closeClearTableModal();
 }
